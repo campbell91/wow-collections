@@ -1,0 +1,9 @@
+<div *ngIf="missingMounts">
+  <ul class="missing-list">
+    <li class="list-item" *ngFor="let missing of missingMounts">
+      {{missing.name}}
+      <br>
+      API ID: {{missing.id}}
+    </li>
+  </ul>
+</div>

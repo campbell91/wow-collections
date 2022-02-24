@@ -1,0 +1,28 @@
+<div class="realm-group">
+
+  <label id="regionLabel" for="regionSelect">Region:</label>
+    <select
+      id="regionSelect" #regionSelect (change)="updateRegionSelect(regionSelect.value)" [ngModel]="selectedRegion">
+      <option disabled>Choose</option>
+      <option *ngFor="let region of regionList" [value]="region">{{region}}</option>
+    </select>
+
+    <input id="realmInput" type="text"
+      list="realms"
+      [(ngModel)]="currentRealm"
+      (change)="onRealmChanged(currentRealm)"
+      placeholder="Enter realm"/>
+    <datalist id="realms">
+      <select>
+        <option *ngFor="let realm of availableRealms"
+                [value]="realm.name">
+        </option>
+      </select>
+    </datalist>
+
+</div>
+
+
+
+
+

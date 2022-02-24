@@ -1,0 +1,31 @@
+.realm-group {
+  display: flex;
+  justify-content:center;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 0 10px;
+}
+
+#regionLabel {
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 18px;
+}
+
+#regionSelect {
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  text-align: center;
+  width: 40px;
+}
+
+#regionSelect:hover {
+  cursor: pointer;
+}
+
+#realmInput {
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  text-align: center;
+  width: 100%;
+}

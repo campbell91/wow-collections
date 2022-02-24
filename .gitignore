@@ -1,0 +1,18 @@
+# dotenv environment variables file
+.env
+
+# Node modules
+node_modules
+
+# Visual Studio Code Working Files
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Markdown file tracking dev problems and found solutions
+LEARNING.md
+

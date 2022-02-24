@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="card">
+
+      <app-realm-list></app-realm-list>
+
+      <div class="characterGroup">
+        <label id="name-label" for="character-input">Character:</label>
+        <input
+          type="search"
+          id="character-input"
+          placeholder="Name"
+          [(ngModel)]="characterName"
+          (change)="onNameChanged(characterName)"
+        >
+      </div>
+
+      <button
+        class="submitButton"
+        type="submit"
+        name="submitCharacter"
+        [disabled]="validName == false"
+        routerLink="/mounts">See missing mounts
+      </button>
+
+  </div>
+</div>
